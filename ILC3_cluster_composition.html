@@ -1,0 +1,422 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ILC3 Cluster Composition</title>
+<style>
+:root {
+  --bg: #ffffff;
+  --text: #1f2937;
+  --muted: #6b7280;
+  --border: #d1d5db;
+  --header-bg: #f3f4f6;
+  --row-alt: #f9fafb;
+}
+body {
+  margin: 0;
+  padding: 32px;
+  background: var(--bg);
+  color: var(--text);
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+}
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+h1 {
+  margin: 0 0 8px;
+  font-size: 28px;
+}
+.subtitle {
+  margin: 0 0 24px;
+  color: var(--muted);
+  font-size: 14px;
+}
+.table-wrap {
+  overflow-x: auto;
+  border: 1px solid var(--border);
+  border-radius: 10px;
+}
+table.data-table {
+  width: 100%;
+  border-collapse: collapse;
+  min-width: 760px;
+  font-size: 14px;
+}
+table.data-table thead th {
+  background: var(--header-bg);
+  font-weight: 600;
+  text-align: center;
+  padding: 12px 14px;
+  border-bottom: 1px solid var(--border);
+  white-space: nowrap;
+}
+table.data-table tbody td {
+  padding: 10px 14px;
+  text-align: center;
+  border-bottom: 1px solid #e5e7eb;
+}
+table.data-table tbody tr:nth-child(even) {
+  background: var(--row-alt);
+}
+table.data-table tbody tr:last-child td {
+  border-bottom: none;
+}
+table.data-table tbody tr:hover {
+  background: #eef2f7;
+}
+.legend {
+  margin-top: 18px;
+  display: flex;
+  gap: 18px;
+  flex-wrap: wrap;
+  font-size: 14px;
+  color: var(--muted);
+}
+.legend-item {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+}
+.swatch {
+  width: 14px;
+  height: 14px;
+  border-radius: 3px;
+  display: inline-block;
+}
+.lti { background: #10B981; }
+.ncr { background: #14B8A6; }
+</style>
+</head>
+<body>
+<div class="container">
+  <h1>ILC3 Cluster Composition</h1>
+  <p class="subtitle">ILC3 subtype composition across Visium spatial clusters.</p>
+  <div class="table-wrap">
+    <table class="dataframe data-table">
+  <thead>
+    <tr style="text-align: center;">
+      <th>Unnamed: 0</th>
+      <th>clusters_res_1</th>
+      <th>predicted_ILC3_subtype</th>
+      <th>n_candidate_profiles</th>
+      <th>total_candidate_profiles</th>
+      <th>percent_candidates</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>1</td>
+      <td>0</td>
+      <td>LTi-like ILC3</td>
+      <td>2</td>
+      <td>2</td>
+      <td>100.000000</td>
+    </tr>
+    <tr>
+      <td>2</td>
+      <td>0</td>
+      <td>NCR+ ILC3</td>
+      <td>0</td>
+      <td>2</td>
+      <td>0.000000</td>
+    </tr>
+    <tr>
+      <td>3</td>
+      <td>1</td>
+      <td>LTi-like ILC3</td>
+      <td>0</td>
+      <td>1</td>
+      <td>0.000000</td>
+    </tr>
+    <tr>
+      <td>4</td>
+      <td>1</td>
+      <td>NCR+ ILC3</td>
+      <td>1</td>
+      <td>1</td>
+      <td>100.000000</td>
+    </tr>
+    <tr>
+      <td>5</td>
+      <td>10</td>
+      <td>LTi-like ILC3</td>
+      <td>4</td>
+      <td>8</td>
+      <td>50.000000</td>
+    </tr>
+    <tr>
+      <td>6</td>
+      <td>10</td>
+      <td>NCR+ ILC3</td>
+      <td>4</td>
+      <td>8</td>
+      <td>50.000000</td>
+    </tr>
+    <tr>
+      <td>7</td>
+      <td>11</td>
+      <td>LTi-like ILC3</td>
+      <td>5</td>
+      <td>9</td>
+      <td>55.555556</td>
+    </tr>
+    <tr>
+      <td>8</td>
+      <td>11</td>
+      <td>NCR+ ILC3</td>
+      <td>4</td>
+      <td>9</td>
+      <td>44.444444</td>
+    </tr>
+    <tr>
+      <td>9</td>
+      <td>12</td>
+      <td>LTi-like ILC3</td>
+      <td>8</td>
+      <td>11</td>
+      <td>72.727273</td>
+    </tr>
+    <tr>
+      <td>10</td>
+      <td>12</td>
+      <td>NCR+ ILC3</td>
+      <td>3</td>
+      <td>11</td>
+      <td>27.272727</td>
+    </tr>
+    <tr>
+      <td>11</td>
+      <td>13</td>
+      <td>LTi-like ILC3</td>
+      <td>18</td>
+      <td>24</td>
+      <td>75.000000</td>
+    </tr>
+    <tr>
+      <td>12</td>
+      <td>13</td>
+      <td>NCR+ ILC3</td>
+      <td>6</td>
+      <td>24</td>
+      <td>25.000000</td>
+    </tr>
+    <tr>
+      <td>13</td>
+      <td>14</td>
+      <td>LTi-like ILC3</td>
+      <td>5</td>
+      <td>12</td>
+      <td>41.666667</td>
+    </tr>
+    <tr>
+      <td>14</td>
+      <td>14</td>
+      <td>NCR+ ILC3</td>
+      <td>7</td>
+      <td>12</td>
+      <td>58.333333</td>
+    </tr>
+    <tr>
+      <td>15</td>
+      <td>15</td>
+      <td>LTi-like ILC3</td>
+      <td>1</td>
+      <td>2</td>
+      <td>50.000000</td>
+    </tr>
+    <tr>
+      <td>16</td>
+      <td>15</td>
+      <td>NCR+ ILC3</td>
+      <td>1</td>
+      <td>2</td>
+      <td>50.000000</td>
+    </tr>
+    <tr>
+      <td>17</td>
+      <td>16</td>
+      <td>LTi-like ILC3</td>
+      <td>13</td>
+      <td>38</td>
+      <td>34.210526</td>
+    </tr>
+    <tr>
+      <td>18</td>
+      <td>16</td>
+      <td>NCR+ ILC3</td>
+      <td>25</td>
+      <td>38</td>
+      <td>65.789474</td>
+    </tr>
+    <tr>
+      <td>19</td>
+      <td>17</td>
+      <td>LTi-like ILC3</td>
+      <td>8</td>
+      <td>15</td>
+      <td>53.333333</td>
+    </tr>
+    <tr>
+      <td>20</td>
+      <td>17</td>
+      <td>NCR+ ILC3</td>
+      <td>7</td>
+      <td>15</td>
+      <td>46.666667</td>
+    </tr>
+    <tr>
+      <td>21</td>
+      <td>18</td>
+      <td>LTi-like ILC3</td>
+      <td>1</td>
+      <td>4</td>
+      <td>25.000000</td>
+    </tr>
+    <tr>
+      <td>22</td>
+      <td>18</td>
+      <td>NCR+ ILC3</td>
+      <td>3</td>
+      <td>4</td>
+      <td>75.000000</td>
+    </tr>
+    <tr>
+      <td>23</td>
+      <td>19</td>
+      <td>LTi-like ILC3</td>
+      <td>0</td>
+      <td>10</td>
+      <td>0.000000</td>
+    </tr>
+    <tr>
+      <td>24</td>
+      <td>19</td>
+      <td>NCR+ ILC3</td>
+      <td>10</td>
+      <td>10</td>
+      <td>100.000000</td>
+    </tr>
+    <tr>
+      <td>25</td>
+      <td>2</td>
+      <td>LTi-like ILC3</td>
+      <td>3</td>
+      <td>7</td>
+      <td>42.857143</td>
+    </tr>
+    <tr>
+      <td>26</td>
+      <td>2</td>
+      <td>NCR+ ILC3</td>
+      <td>4</td>
+      <td>7</td>
+      <td>57.142857</td>
+    </tr>
+    <tr>
+      <td>27</td>
+      <td>4</td>
+      <td>LTi-like ILC3</td>
+      <td>4</td>
+      <td>4</td>
+      <td>100.000000</td>
+    </tr>
+    <tr>
+      <td>28</td>
+      <td>4</td>
+      <td>NCR+ ILC3</td>
+      <td>0</td>
+      <td>4</td>
+      <td>0.000000</td>
+    </tr>
+    <tr>
+      <td>29</td>
+      <td>5</td>
+      <td>LTi-like ILC3</td>
+      <td>25</td>
+      <td>28</td>
+      <td>89.285714</td>
+    </tr>
+    <tr>
+      <td>30</td>
+      <td>5</td>
+      <td>NCR+ ILC3</td>
+      <td>3</td>
+      <td>28</td>
+      <td>10.714286</td>
+    </tr>
+    <tr>
+      <td>31</td>
+      <td>6</td>
+      <td>LTi-like ILC3</td>
+      <td>33</td>
+      <td>42</td>
+      <td>78.571429</td>
+    </tr>
+    <tr>
+      <td>32</td>
+      <td>6</td>
+      <td>NCR+ ILC3</td>
+      <td>9</td>
+      <td>42</td>
+      <td>21.428571</td>
+    </tr>
+    <tr>
+      <td>33</td>
+      <td>7</td>
+      <td>LTi-like ILC3</td>
+      <td>4</td>
+      <td>6</td>
+      <td>66.666667</td>
+    </tr>
+    <tr>
+      <td>34</td>
+      <td>7</td>
+      <td>NCR+ ILC3</td>
+      <td>2</td>
+      <td>6</td>
+      <td>33.333333</td>
+    </tr>
+    <tr>
+      <td>35</td>
+      <td>8</td>
+      <td>LTi-like ILC3</td>
+      <td>8</td>
+      <td>24</td>
+      <td>33.333333</td>
+    </tr>
+    <tr>
+      <td>36</td>
+      <td>8</td>
+      <td>NCR+ ILC3</td>
+      <td>16</td>
+      <td>24</td>
+      <td>66.666667</td>
+    </tr>
+    <tr>
+      <td>37</td>
+      <td>9</td>
+      <td>LTi-like ILC3</td>
+      <td>6</td>
+      <td>23</td>
+      <td>26.086957</td>
+    </tr>
+    <tr>
+      <td>38</td>
+      <td>9</td>
+      <td>NCR+ ILC3</td>
+      <td>17</td>
+      <td>23</td>
+      <td>73.913043</td>
+    </tr>
+  </tbody>
+</table>
+  </div>
+  <div class="legend">
+    <span class="legend-item"><span class="swatch lti"></span>LTi-like ILC3</span>
+    <span class="legend-item"><span class="swatch ncr"></span>NCR+ ILC3</span>
+  </div>
+</div>
+</body>
+</html>
